@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		86630C401D8AA9CF00C84F48 /* ExampleFrameworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86630C3F1D8AA9CF00C84F48 /* ExampleFrameworkKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86630C481D8AABEF00C84F48 /* ExampleFrameworkClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86630C471D8AABEF00C84F48 /* ExampleFrameworkClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		86630C3C1D8AA9CF00C84F48 /* ExampleFrameworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExampleFrameworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86630C3F1D8AA9CF00C84F48 /* ExampleFrameworkKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleFrameworkKit.h; sourceTree = "<group>"; };
 		86630C411D8AA9CF00C84F48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86630C471D8AABEF00C84F48 /* ExampleFrameworkClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleFrameworkClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				86630C3F1D8AA9CF00C84F48 /* ExampleFrameworkKit.h */,
 				86630C411D8AA9CF00C84F48 /* Info.plist */,
+				86630C471D8AABEF00C84F48 /* ExampleFrameworkClass.swift */,
 			);
 			path = ExampleFrameworkKit;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86630C481D8AABEF00C84F48 /* ExampleFrameworkClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 		86630C451D8AA9CF00C84F48 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +245,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bignew.ExampleFrameworkKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		86630C461D8AA9CF00C84F48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
